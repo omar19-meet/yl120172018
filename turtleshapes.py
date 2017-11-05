@@ -19,10 +19,11 @@ angle=144
 	turtle.forward(sidelength)
 	turtle.right(angle)'''
 
-turtle.register_shape("turtle_head1", ((100,0),(100,-100),(50,-200),(0,-100),(0,0)))
-turtle.addshape("turtlehead.gif")
-turtle.shape("turtle_head1/turtlehead.gif")
-turtle.getshapes()
+turtle.register_shape("turtlehead1", ((100,0),(100,-100),(50,-200),(0,-100),(0,0)))
+
+turtle.shape("turtlehead1")
+
+
 
 turtle.mainloop()
 
