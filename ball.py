@@ -8,7 +8,7 @@ class Ball(Turtle):
 		self.dx=dx
 		self.dy=dy
 		self.r=r
-		self.color=self.color
+		self.color(color)
 		self.shape('circle')
 		self.shapesize(r/10)
 
@@ -25,11 +25,11 @@ class Ball(Turtle):
 
 		if right_side_ball>=(screen_width/2):
 			new_x=self.xcor()-self.dx
-		if left_side_ball<=(screen_width/2):
+		if left_side_ball<=-(screen_width/2):
 			new_x=self.xcor()+self.dx
 		if top_side_ball>=(screen_height/2):
 			new_y=self.ycor()-self.dy
-		elif bottom_side_ball<=(screen_height/2):
+		elif bottom_side_ball<=-(screen_height/2):
 			new_y=self.ycor()+self.dy
 
 
